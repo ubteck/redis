@@ -1,10 +1,10 @@
 ## redis.go
 
-redis.go is a client for the [redis](http://github.com/antirez/redis) key-value store. 
+redis.go is a client for the [redis](http://github.com/antirez/redis) key-value store.
 
 Some features include:
 
-* Designed for Redis 2.6.x. 
+* Designed for Redis 2.6.x.
 * Support for all redis types - strings, lists, sets, sorted sets, and hashes
 * Very simple usage
 * Connection pooling ( with configurable size )
@@ -20,7 +20,7 @@ Just run `go get github.com/hoisie/redis`
 
 ## Examples
 
-Most of the examples connect to a redis database running in the default port -- 6379. 
+Most of the examples connect to a redis database running in the default port -- 6379.
 
 
 ### Hello World example
@@ -39,7 +39,7 @@ func main() {
 }
 ```
 
-### Strings 
+### Strings
 ```go
 var client redis.Client
 client.Set("a", []byte("hello"))
@@ -85,3 +85,4 @@ More examples coming soon. See `redis_test.go` for more usage examples.
 * SORT
 * ZUNIONSTORE / ZINTERSTORE
 
+add by chenlin
